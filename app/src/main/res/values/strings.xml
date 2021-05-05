@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CBIR</string>
+    <string name="new_photo">New photo</string>
+    <string name="uploadimg">Upload image</string>
+    <string name="upload">Upload</string>
+
+    <string name="e_mail">Your email</string>
+    <string name="password">password</string>
+
+    <string name="login">Login</string>
+    <string name="gotoRegister">go to Register</string>
+
+    <string name="username">username</string>
+    <string name="register">Register</string>
+
+    <string name="tag">Let\'s join us.</string>
+    <string name="your_name">Your username</string>
+    <string name="re_type_password">Re-type password</string>
+    <string name="your_pass">Your password</string>
+    <string name="gotoLogin">go to Login</string>
+    <string name="uploadimg2">*please choose a photo from your gallery</string>
+    <string name="choose">*please choose a method</string>
+    <string name="pirates">SIFT</string>
+    <string name="sift">SIFT</string>
+    <string name="orb">ORB</string>
+    <string name="brief">BRIEF</string>
+    <string name="canny">CANNY</string>
+    <string name="yolo">YOLO</string>
+
+
+</resources>
