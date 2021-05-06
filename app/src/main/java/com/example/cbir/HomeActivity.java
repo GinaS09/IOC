@@ -9,6 +9,8 @@ import com.example.cbir.adapters.HomeAdapter;
 
 public class HomeActivity extends AppCompatActivity {
     ListView list;
+    ListView list2;
+    ListView list3;
 
     String[] maintitle ={
             "Title 1","Title 2",
@@ -47,7 +49,12 @@ public class HomeActivity extends AppCompatActivity {
 //        lv.setAdapter(adapter);
 
         HomeAdapter adapter=new HomeAdapter(this, maintitle,descriere,imgid);
+        adapter.notifyDataSetChanged();
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
+
+        list2=(ListView) findViewById(R.id.list2);
+        list2.setAdapter(adapter);
+
     }
 }
