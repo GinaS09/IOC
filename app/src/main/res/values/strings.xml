@@ -26,6 +26,8 @@
     <string name="brief">BRIEF</string>
     <string name="canny">CANNY</string>
     <string name="yolo">YOLO</string>
+    <string name="location">Location</string>
+    <string name="comm">Comments</string>
 
 
 </resources>

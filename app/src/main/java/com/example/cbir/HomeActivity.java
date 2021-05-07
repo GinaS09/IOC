@@ -2,7 +2,10 @@ package com.example.cbir;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 
 import com.example.cbir.adapters.HomeAdapter;
@@ -30,6 +33,8 @@ public class HomeActivity extends AppCompatActivity {
             R.drawable.ro,
     };
 
+    private Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,5 +61,19 @@ public class HomeActivity extends AppCompatActivity {
         list2=(ListView) findViewById(R.id.list2);
         list2.setAdapter(adapter);
 
+        btn = (Button) findViewById(R.id.button111);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPlaceActivity();
+            }
+        });
+
+    }
+
+    private void openPlaceActivity(){
+        Intent intent = new Intent(this, PlaceDescriptionActivity.class);
+        intent.putExtra("path","Cantacuzino");
+        startActivity(intent);
     }
 }
