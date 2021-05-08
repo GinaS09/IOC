@@ -28,6 +28,17 @@
     <string name="yolo">YOLO</string>
     <string name="location">Location</string>
     <string name="comm">Comments</string>
+    <string name="hello">Hi</string>
+    <string name="search">Search location</string>
+    <string name="news">News</string>
+    <string name="sighisoara">Sighisoara</string>
+    <string name="bigar">Bigar waterfall</string>
+    <string name="sibiu">Sibiu</string>
+    <string name="foryou">For you</string>
+    <string name="delta">The Danube Delta</string>
+    <string name="trans">Transfagarasan</string>
+    <string name="pod">God\'s bridge</string>
+    <string name="cast">Cantacuzino Castle</string>
 
 
 </resources>

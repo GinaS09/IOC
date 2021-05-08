@@ -53,9 +53,34 @@ public class PlaceDescriptionActivity extends FragmentActivity implements OnMapR
         title.setText(model.placeName);
         description.setText(model.placeDesciption);
         ratingBar.setNumStars(5);
-        ratingBar.setRating(3);
+
         if(received.equals("Cantacuzino")) {
             imageView.setImageDrawable(getResources().getDrawable(R.drawable.cast, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("Bigar")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.bigar, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("Sibiu")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.sibiu, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("Sighisoara")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.sighisoara, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("PodDumnezeu")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.pod, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("Transfagarasan")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.trans, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("Delta")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.delta, null));
+            ratingBar.setRating(model.placeRating);
         }
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
