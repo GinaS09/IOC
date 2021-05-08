@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CBIR">
-        <activity android:name=".PlaceDescriptionActivity"></activity>
+        <activity android:name=".HomePageActivity"></activity>
+        <activity android:name=".PlaceDescriptionActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">
@@ -33,7 +34,6 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key" />
-
     </application>
 
 </manifest>

@@ -25,11 +25,17 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerName = null;
     private ArrayAdapter<String> adapter = null;
     private List<String> names = new ArrayList<>();
+    private EditText username;
+
+    private String usernameString;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        username = (EditText)findViewById(R.id.et_email);
+
 
         Log.d("MainActivity", "Aplicatia a pornit!");
         Toast.makeText(getApplicationContext(), "Aplicatia a pornit!", Toast.LENGTH_LONG).show();
@@ -64,7 +70,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickLogin(View view) {
-        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+        usernameString= username.getText().toString();
+        Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
+        intent.putExtra("username", usernameString);
         startActivity(intent);
     }
 
