@@ -19,7 +19,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CBIR">
-        <activity android:name=".HomePageActivity"></activity>
+        <activity android:name=".PlacesListActivity"></activity>
+        <activity android:name=".HomePageActivity" />
         <activity android:name=".PlaceDescriptionActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />

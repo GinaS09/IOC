@@ -82,6 +82,22 @@ public class PlaceDescriptionActivity extends FragmentActivity implements OnMapR
             imageView.setImageDrawable(getResources().getDrawable(R.drawable.delta, null));
             ratingBar.setRating(model.placeRating);
         }
+        else if(received.equals("mireasa")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.mireasa, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("cailor")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.cai, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("caraiman")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.caraiman, null));
+            ratingBar.setRating(model.placeRating);
+        }
+        else if(received.equals("beusnita")) {
+            imageView.setImageDrawable(getResources().getDrawable(R.drawable.beusnita, null));
+            ratingBar.setRating(model.placeRating);
+        }
 
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
