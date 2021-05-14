@@ -71,6 +71,35 @@ public class PlaceModel {
             this.latit = (long) 45.33333333333333;
             this.longit = (long) 29.5;
         }
+        if(name.equals("cailor")){
+            this.placeName = "Horse waterfall";
+            this.placeDesciption = "Do you know what it's like to stand at the foot of a stream of water that falls from 90 meters above you, while the surrounding green seems to sway in the sound of river music hitting the steps? The location of the waterfall is in the Rodna Mountains, near the Borsa resort. And once you arrive, you choose: either you take the cable car, or you decide that you have to get rid of some sweat to take full advantage, so you go for a half-hour hike. ";
+            this.placeRating = 3;
+            this.latit = (long) 47.589167;
+            this.longit = (long) 24.801389;
+        }
+        if(name.equals("mireasa")){
+            this.placeName = "The Bride's Veil Waterfall";
+            this.placeDesciption = "At a distance of 68 kilometers from Cluj, in the heart of the Apuseni Mountains, the most beautiful waterfall in Transylvania awaits you. With a fall of 30 meters, it is not too hard to imagine how the waterfall with such a name came about, but because we are chasing legends and stories, there is one that is at the origin of this waterfall. It is said that on the wedding day, a bride fell from the rocks of the Bihor Mountains, while her veil remained hanging there. ";
+            this.placeRating= 5;
+            this.latit = (long) 46.71161;
+            this.longit = (long)22.82914;
+        }
+        if(name.equals("beusnita")){
+            this.placeName = "Beusnita Waterfall";
+            this.placeRating = 5;
+            this.placeDesciption = "The Beusnita waterfall in Banat was formed on the Beu river upstream of the Ochiul Beului lake and includes several waterfalls, the largest having a height of 15 m. Due to the soil, not only numerous waterfalls were formed, but the permeability of the limestone tuff and modeling mini dams, water holes and small caverns. The legend says that the sparkling waters of the waterfall represent the bridal veil of the shepherdess in love with the son of Beiului, and the water flowing from the waterfall meets the water from the spring that feeds the lake Ochiul Beiului, starting merrily towards the outflow. They arose through the action of water for millennia in the calcareous substrate. The dissolved limestone was deposited layer by layer along the course of the river, forming calcareous tuff, soft and permeable rock that allowed the modeling of countless shapes, mini-dams, water holes and successive waterfalls. ";
+            this.latit = (long) 44.93516;
+            this.longit = (long) 21.80338;
+        }
+        if(name.equals("caraiman")){
+            this.placeName = "Caraiman Waterfall";
+            this.placeRating = 4;
+            this.placeDesciption = "Caraiman Waterfall is another well-known destination of Prahova County, whose name reminds you of the Heroes' Cross and the Peak of the same name, which are in the area. . The last comes from the fact that only in a period of the year, namely in the first part of spring, when it has water, otherwise it is dry. Due to the melting of snow and rain, an impressive waterfall is created, at which point it is recommended to visit ";
+            this.latit =(long)45.433033;
+            this.longit=(long)25.470085;
+        }
+
 
     }
 /*
