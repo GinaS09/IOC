@@ -42,6 +42,7 @@
         android:padding="15dp"
         android:inputType="textPersonName"
         android:fontFamily="cursive"
+        android:focusable = "true"
         android:background="@drawable/et_custom"
         android:textSize="25sp" />
 
@@ -56,6 +57,7 @@
         android:padding="15dp"
         android:fontFamily="cursive"
         android:inputType="textEmailAddress"
+        android:focusable = "true"
         android:background="@drawable/et_custom"
         android:textSize="25sp" />
 
@@ -70,6 +72,7 @@
         android:padding="15dp"
         android:fontFamily="cursive"
         android:inputType="textPassword"
+          android:focusable = "true"
         android:background="@drawable/et_custom"
         android:textSize="25sp" />
 
@@ -84,6 +87,7 @@
             android:background="@drawable/et_custom"
             android:fontFamily="cursive"
             android:hint="@string/re_type_password"
+            android:focusable = "true"
             android:inputType="textPassword"
             android:padding="15dp"
             android:textSize="25sp" />

@@ -28,13 +28,14 @@
         android:fontFamily="cursive"
         android:layout_marginStart="25dp"
         android:layout_marginBottom="50dp"
-        android:layout_above="@id/et_email"/>
+        android:layout_above="@id/et_user"/>
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/et_user"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="@string/username"
+        android:focusable = "true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:padding="15dp"
@@ -49,6 +50,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="@string/password"
+        android:focusable = "true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="10dp"

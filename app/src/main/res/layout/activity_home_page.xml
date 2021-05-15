@@ -71,6 +71,31 @@
                 >
 
                 <TextView
+                    android:id="@+id/textView0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#83FBF0"
+                    android:backgroundTint="#E2FDE3"
+                    android:fontFamily="cursive"
+                    android:shadowColor="#009688"
+                    android:shadowRadius="5"
+                    android:text="Near you !     Choose km"
+                    android:textAlignment="center"
+                    android:textColor="#101010"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="5dp"/>
+
+                <Spinner
+                    android:id="@+id/spinnerl"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:spinnerMode="dialog"
+                    android:textAlignment="center" />
+
+
+                <TextView
                     android:id="@+id/textView8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

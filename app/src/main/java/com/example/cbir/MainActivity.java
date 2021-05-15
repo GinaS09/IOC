@@ -1,16 +1,21 @@
 package com.example.cbir;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -25,7 +30,8 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerName = null;
     private ArrayAdapter<String> adapter = null;
     private List<String> names = new ArrayList<>();
-    private EditText username;
+    private EditText username,pass;
+    private TextView title;
 
     private String usernameString;
 
@@ -34,46 +40,46 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        username = (EditText)findViewById(R.id.et_email);
+        username = (EditText)findViewById(R.id.et_user);
+        pass = (EditText)findViewById(R.id.et_password);
+
+        title = findViewById(R.id.tv_title);
 
 
         Log.d("MainActivity", "Aplicatia a pornit!");
         Toast.makeText(getApplicationContext(), "Aplicatia a pornit!", Toast.LENGTH_LONG).show();
 
-        SharedPreferences sharedPreferences = getSharedPreferences("names", MODE_PRIVATE);
-//        Set<String> namesSet = sharedPreferences.getStringSet("name", null);
-//        if(namesSet != null) {
-//            names.clear();
-//            for(String name : namesSet) {
-//                names.add(name);
-//            }
-//        }
 
-//        spinnerName = findViewById(R.id.spinnerName);
-//        adapter = new ArrayAdapter<>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, names);
-//        spinnerName.setAdapter(adapter);
+
+
 
     }
 
 
     protected void onDestroy() {
         super.onDestroy();
-//
-        SharedPreferences sharedPreferences = getSharedPreferences("names", MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        Set<String> set = new HashSet<>();
-//        for(String name : names) {
-//            set.add(name);
-//        }
-//        editor.putStringSet("name", set);
-//        editor.commit();
     }
 
     public void clickLogin(View view) {
         usernameString= username.getText().toString();
-        Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
-        intent.putExtra("username", usernameString);
-        startActivity(intent);
+        if (usernameString.equals("oana") || usernameString.equals("gina") || usernameString.equals("maria")) {
+            Intent intent = new Intent(MainActivity.this, HomePageActivity.class);
+            intent.putExtra("username", usernameString);
+            startActivity(intent);
+        }
+        else
+        {
+            Toast.makeText(getApplicationContext(), "Wrong Credentials! \n Login Fail !", Toast.LENGTH_LONG).show();
+            username.setText("");
+            pass.setText("");
+
+            username.startAnimation(AnimationUtils.loadAnimation( this,android.R.anim.fade_in));
+            pass.startAnimation(AnimationUtils.loadAnimation( this,android.R.anim.fade_in));
+
+            username.setBackgroundColor(Color.parseColor("#ff8080"));
+            pass.setBackgroundColor(Color.parseColor("#ff9999"));
+
+        }
     }
 
     public void clickGotoRegister(View view) {
